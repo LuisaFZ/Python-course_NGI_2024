@@ -2,7 +2,7 @@
 """
 Spyder Editor
 
-This is a temporary script file.
+Created on Mon May  6 13:50:14 2024
 
 @author: Luival 2024-05-06
 
@@ -40,7 +40,7 @@ World
 #   floats: 1.2, 3.14, 100.99
 
 #   int function converts a float into an integer BUT!!
-#   does not round it, only removes the numbers after the decimal
+#   it does not round it, only removes the numbers after the decimal
 print(int(100.99))
 
 
@@ -64,7 +64,7 @@ print('exercise 2')
 print(5**8)    # power, 5 to the power of 8
 print(9**0.5)  # workaround for squareroot of 9
 print(14 % 5)  # modulo
-print(13//3*3)
+print(13//33)  # prints the remainder
 
 
 #  variables, and string concatenation
@@ -122,17 +122,29 @@ rock_UCS = {'granite': [220, 200, 205],
             'eclogite': [250, 300, 270]}
 
 
-#   exercise 3
-print('exercise 3')
+#   EXERCISE 3
+print('Exercise 3:')
 
-# create empty list
+#   create a list of srings
+rock_types = ['marl', 'gneiss', 'limestone', 'eclogite']
+
+#   create an empty list
 empty_list = []
 
-#   append items to the previous list and replace the strings for the count
-#   of characters on each original string
-empty_list.append(len('marl'))
-empty_list.append(len('gneiss'))
-empty_list.append(len('limestone'))
-empty_list.append(len('eclogite'))
+#   append items to empty_list, the items being integers from
+#   counting characters from elements of the rock_types list
+
+for rock in rock_types:
+    len_char = len(rock)
+    empty_list.append(len_char)
 
 print(empty_list)
+
+#   sum of three last items of the list [-3:]
+
+sum_ex3 = 0
+
+for item in empty_list[-3:]:
+    print(item)
+    sum_ex3 = sum_ex3 + item
+print(f'the result is: {sum_ex3}')
