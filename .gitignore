@@ -1,2 +1,8 @@
 # automatically generated folder
 src/__pycache__/
+
+# ignore pictures
+*.jpg
+*.jpeg
+*.png
+*.gif
