@@ -6,3 +6,6 @@ src/__pycache__/
 *.jpeg
 *.png
 *.gif
+
+# ignore large database files
+CPT_PremstallerGeotechnik_revised.csv
